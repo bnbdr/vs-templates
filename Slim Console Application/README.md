@@ -1,0 +1,1 @@
+# Slim Console Application (no CRT)
