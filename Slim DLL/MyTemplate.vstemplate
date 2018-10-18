@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Slim DLL (no CRT)</Name>
+    <Description>DLL without linking to CRT</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>slim_dll</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="slimDLL.vcxproj" File="slimDLL.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.vcxproj.filters">slimDLL.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.c">dllmain.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.def">slimDLL.def</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.h">slimDLL.h</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
